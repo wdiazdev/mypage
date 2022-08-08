@@ -25,7 +25,8 @@ body {
 }
 
 .main {
-    background-color: #191c32;
+    background-image: url(./assets/Animated\ Shape.svg);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -220,12 +221,17 @@ body {
     justify-content: center;
     align-items: center;
     color: #00FFFF;
+    opacity: 1;
 }
 
 .welcome-to h5 {
     letter-spacing: 4px;
     font-weight: 400;
     margin: 0 30px;
+}
+
+.welcome-to i {
+    font-size: 20px;
 }
 
 /* ABOUT SECTION  */
@@ -257,6 +263,46 @@ body {
     background-color: #00FFFF;
 }
 
+.about-info {
+    border: 1px solid red;
+    position: absolute;
+    top: 350px;
+    right: 150px;
+    width: 89%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-info p {
+    width: 600px;
+    height: 500px;
+    font-size: 20px;
+    border: 1px solid red;
+    margin: 0 30px;
+}
+
+.myimage {
+    width: 600px;
+    height: 500px;
+    background-image: url(./assets/myimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+    border: 5px solid #00FFFF;
+    margin: 0 30px;
+    -webkit-filter: brightness(50%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.myimage:hover {
+    -webkit-filter: brightness(100%);
+}
+
 /* SKILLS SECTION  */
 
 .skills-section {
@@ -276,7 +322,7 @@ body {
 .tech-icons {
     margin-top: 50px;
     width: 70vw;
-    height: 55%;
+    height: 60%;
     position: relative;
     margin-left: 275px;
     top: 150px;
@@ -314,7 +360,7 @@ body {
 /* PORTFOLIO SECTION*/
 
 .portfolio-section {
-    background-color: #191c32;
+    background-image: url(./assets/Hexagon.svg);
     height: 100vh;
 }
 
@@ -330,7 +376,7 @@ body {
 /* CONTACT SECTION */
 
 .contact-section {
-    background-color: #191c32;
+    background-image: url(./assets/Hexagon.svg);
     height: 100vh;
     position: relative;
 }
@@ -452,6 +498,33 @@ body {
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
+.to-top {
+    background-color: #0099ff;
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    font-size: 40px;
+    font-weight: 500;
+    color: #191c32;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s;
+}
+
+.to-top.active {
+    bottom: 40px;
+    opacity: 1;
+    pointer-events: auto;
+}
 
 /* FOOTER  */
 
