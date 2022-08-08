@@ -301,6 +301,7 @@ body {
 
 .myimage:hover {
     -webkit-filter: brightness(100%);
+    transform: scale(1.1)
 }
 
 /* SKILLS SECTION  */
@@ -397,8 +398,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1000px;
+    width: 950px;
     height: 600px;
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
 }
 
 .contact-icons {
@@ -407,6 +410,7 @@ body {
     justify-content: space-around;
     font-size: 60px;
     height: 500px;
+    margin-left: 10px;
 }
 
 .contact-icons span {
@@ -425,6 +429,7 @@ body {
     justify-content: space-around;
     align-self: center;
     width: 550px;
+    margin-right: 10px;
 }
 
 .form input {
