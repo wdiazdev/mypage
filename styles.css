@@ -15,7 +15,9 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     color: #FFFFFF;
+    background-color: #191c32;
     letter-spacing: 2px;
+
 }
 
 .main svg {
@@ -29,15 +31,15 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 /* Navbar and logo  */
 
 .logo {
-    top: 20px;
+    top: 1.2rem;
     position: absolute;
-    padding: 20px;
+    padding: 1rem;
     font-size: 3rem;
     font-weight: 700;
     text-align: center;
@@ -52,14 +54,14 @@ body {
 }
 
 .logo p {
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .navbar {
     position: fixed;
     background-color: #222222;
-    width: 165px;
-    height: 100vh;
+    max-width: 11rem;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,7 +71,7 @@ body {
 .navbar-links a {
     position: relative;
     display: block;
-    font-size: 15px;
+    font-size: 1rem;
     color: #FFFFFF;
     text-align: center;
     padding: 1.5rem;
@@ -87,12 +89,14 @@ body {
 
 .dev-info {
     position: absolute;
-    top: 40%;
+    margin-left: 17rem;
+    top: 30rem;
+    max-width: 89%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin-left: 275px;
+    text-align: left;
+    padding: 1rem;
     letter-spacing: 4px;
     background: #FFFFFF;
     background: linear-gradient(to right, #FFFFFF 0%, #00FFFF 100%);
@@ -101,12 +105,12 @@ body {
 }
 
 .dev-info h1 {
-    font-size: 100px;
-    margin: 20px 0;
+    font-size: 6.5rem;
+    margin: 1.2rem 0;
 }
 
 .dev-info h3 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     line-height: 1.5;
 }
 
@@ -115,10 +119,9 @@ body {
 .email-info p {
     position: fixed;
     bottom: 0;
-    right: 20px;
-    height: 54%;
+    right: 1.4rem;
+    min-height: 40rem;
     color: #00FFFF;
-    letter-spacing: 3px;
     text-transform: uppercase;
     writing-mode: vertical-rl;
     z-index: 1000;
@@ -127,9 +130,9 @@ body {
 .divider-right-main {
     position: fixed;
     bottom: 0;
-    right: 30px;
-    width: 2px;
-    height: 30%;
+    right: 1.8rem;
+    min-width: 2px;
+    min-height: 22rem;
     background-color: #00FFFF;
     z-index: 1000;
 }
@@ -137,9 +140,9 @@ body {
 .divider-left-main {
     position: absolute;
     bottom: 0;
-    left: 80px;
-    width: 2px;
-    height: 10%;
+    left: 5rem;
+    min-width: 2px;
+    min-height: 10%;
     background-color: #00FFFF;
 }
 
@@ -147,20 +150,20 @@ body {
 
 .resume-button {
     position: absolute;
-    top: 70px;
-    right: 70px;
-    width: 200px;
-    padding: 20px;
+    top: 4rem;
+    right: 4rem;
+    min-width: 12rem;
+    padding: 1.2rem;
     border: none;
     display: block;
     text-align: center;
-    letter-spacing: 4px;
     cursor: pointer;
+    letter-spacing: 4px;
     text-transform: uppercase;
     overflow: hidden;
     color: #222222;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1rem;
     background-color: #FFFFFF;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 }
@@ -191,9 +194,8 @@ body {
 
 .main-social {
     position: absolute;
-    bottom: 160px;
-    left: 65px;
-    height: 80px;
+    bottom: 10rem;
+    min-height: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -201,7 +203,7 @@ body {
 }
 
 .main-social i {
-    font-size: 30px;
+    font-size: 1.8rem;
     color: #FFFFFF;
     cursor: pointer;
 }
@@ -216,12 +218,11 @@ body {
     position: absolute;
     bottom: 30px;
     right: 0;
-    width: 89%;
+    min-width: 91%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #00FFFF;
-    opacity: 1;
 }
 
 .welcome-to h5 {
@@ -231,66 +232,65 @@ body {
 }
 
 .welcome-to i {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 /* ABOUT SECTION  */
 
 .about-section {
     background-color: #191c32;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .header {
     position: relative;
-    margin-left: 275px;
-    top: 150px;
+    margin-left: 17rem;
+    top: 9rem;
 }
 
 .sub-header {
-    font-size: 100px;
-    top: 150px;
+    font-size: 6.2rem;
     letter-spacing: 4px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #00FFFF;
+    text-decoration-thickness: 5px;
+    text-underline-offset: 10px;
     background: #FFFFFF;
     background: linear-gradient(to right, #FFFFFF 0%, #00FFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.divider {
-    height: 4px;
-    width: 525px;
-    background-color: #00FFFF;
-}
-
 .about-info {
-    border: 1px solid red;
     position: absolute;
-    top: 350px;
-    right: 150px;
-    width: 89%;
+    top: 22rem;
+    max-width: 89%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+
 }
 
 .about-info p {
-    width: 600px;
-    height: 500px;
+    width: min(100%, 1000px);
+    max-height: 30rem;
     font-size: 20px;
-    border: 1px solid red;
-    margin: 0 30px;
+    overflow: hidden;
+    padding: max(3vh, 1rem);
+    overflow: hidden;
 }
 
 .myimage {
-    width: 600px;
-    height: 500px;
+    min-width: 500px;
+    min-height: 500px;
     background-image: url(./assets/myimage.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     border-radius: 50%;
     border: 5px solid #00FFFF;
-    margin: 0 30px;
+    margin-left: 2rem;
     -webkit-filter: brightness(50%);
     -webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -308,47 +308,45 @@ body {
 
 .skills-section {
     background-color: #191c32;
-    height: 100vh;
-}
-
-.skills-section .divider {
-    width: 610px;
+    min-height: 100vh;
+    position: relative;
 }
 
 .skills-section p {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .tech-icons {
-    margin-top: 50px;
-    width: 70vw;
-    height: 60%;
+    margin: 0 6rem;
+    min-height: 40rem;
     position: relative;
-    margin-left: 275px;
-    top: 150px;
+    margin-left: 17rem;
+    top: 10rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    z-index: 1000;
 }
 
 .icon-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .icon-container i {
     display: flex;
     justify-content: space-evenly;
-    font-size: 80px;
+    font-size: 4rem;
 }
 
 .icon-container span {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px;
-    font-size: 15px;
+    margin-top: 1rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -358,64 +356,66 @@ body {
     transform: scale(1.1);
 }
 
+.skills-section svg {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 /* PORTFOLIO SECTION*/
 
 .portfolio-section {
     background-image: url(./assets/Hexagon.svg);
-    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
 }
 
 .portfolio-section .header {
-    position: relative;
-    top: -100px;
+    position: absolute;
 }
 
-.portfolio-section .divider {
-    width: 465px;
-}
 
 /* CONTACT SECTION */
 
 .contact-section {
     background-image: url(./assets/Hexagon.svg);
-    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
     position: relative;
 }
 
-.contact-section .divider {
-    width: 620px;
-}
-
 .contact-section p {
-    margin-top: 20px;
-    font-size: 20px;
+    margin-top: 1.2rem;
+    font-size: 1.2rem;
 }
 
 .contact-form {
-    position: absolute;
-    top: 450px;
-    right: 200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 950px;
-    height: 600px;
     backdrop-filter: blur(5px);
-    border-radius: 20px;
+    border-radius: 2rem;
+    padding: 5rem;
+    margin-top: 1rem;
 }
 
 .contact-icons {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-size: 60px;
-    height: 500px;
-    margin-left: 10px;
+    font-size: 4rem;
+    min-height: 30rem;
+    margin: 0 1rem;
 }
 
 .contact-icons span {
-    margin-left: 15px;
-    font-size: 15px;
+    margin: 0 1rem;
+    font-size: 1rem;
     background: #FFFFFF;
     background: linear-gradient(to right, #FFFFFF 28%, #00FFFF 100%);
     -webkit-background-clip: text;
@@ -428,14 +428,13 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-self: center;
-    width: 550px;
     margin-right: 10px;
 }
 
 .form input {
-    font-size: 15px;
-    margin: 15px 0;
-    padding: 20px 20px;
+    font-size: 1rem;
+    margin: 1rem;
+    padding: 1.2rem;
     border: none;
     background-color: transparent;
     border-bottom: 1px solid #00FFFF;
@@ -447,13 +446,15 @@ body {
 }
 
 .form textarea {
-    font-size: 15px;
-    padding: 10px 20px;
-    height: 150px;
-    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 1.5rem;
+    min-height: 15rem;
+    min-width: 30rem;
+    margin-bottom: 1rem;
     border: 1px solid #00FFFF;
-    border-radius: 10px;
+    border-radius: 1rem;
     background-color: transparent;
+    margin-top: 1rem;
 }
 
 .form textarea::placeholder {
@@ -463,8 +464,8 @@ body {
 .contact-button {
     position: absolute;
     bottom: 0;
-    width: 200px;
-    padding: 20px;
+    width: 12rem;
+    padding: 1.2rem;
     border: none;
     display: block;
     text-align: center;
@@ -474,7 +475,7 @@ body {
     overflow: hidden;
     color: #222222;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1rem;
     background-color: #FFFFFF;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
 }
@@ -503,16 +504,18 @@ body {
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }
 
+/* TO TOP BUTTON  */
+
 .to-top {
     background-color: #0099ff;
     position: fixed;
-    bottom: 40px;
-    right: 50px;
-    width: 60px;
-    height: 60px;
+    bottom: 2.5rem;
+    right: 3rem;
+    width: 3.7rem;
+    height: 3.7rem;
     border-radius: 50%;
     border: 3px solid #FFFFFF;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #191c32;
     text-align: center;
@@ -526,7 +529,7 @@ body {
 }
 
 .to-top.active {
-    bottom: 40px;
+    bottom: 2.5rem;
     opacity: 1;
     pointer-events: auto;
 }
@@ -535,16 +538,14 @@ body {
 
 .footer {
     background-color: #191c32;
-    width: 100vw;
-    height: 0 auto;
     position: relative;
 }
 
 .footer-content h5 {
     position: absolute;
-    bottom: 30px;
+    bottom: 2rem;
     right: 0;
-    width: 89%;
+    min-width: 91%;
     text-align: center;
     color: #00FFFF;
     letter-spacing: 4px;
