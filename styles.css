@@ -556,7 +556,7 @@ body {
 
 /* MEDIA QUERY  */
 
-@media (min-width: 300px) and (max-width: 750px) {
+@media (min-width: 320px) {
 
     /* MAIN SECTION  */
 
