@@ -17,7 +17,6 @@ body {
     color: #FFFFFF;
     background-color: #191c32;
     letter-spacing: 2px;
-
 }
 
 .main svg {
@@ -109,8 +108,9 @@ body {
     margin: 1.2rem 0;
 }
 
-.dev-info h3 {
+.dev-info p {
     font-size: 1.8rem;
+    font-weight: 700;
     line-height: 1.5;
 }
 
@@ -225,7 +225,7 @@ body {
     color: #00FFFF;
 }
 
-.welcome-to h5 {
+.welcome-to p {
     letter-spacing: 4px;
     font-weight: 400;
     margin: 0 30px;
@@ -244,8 +244,9 @@ body {
 
 .header {
     position: relative;
-    margin-left: 17rem;
-    top: 9rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 10rem;
 }
 
 .sub-header {
@@ -550,4 +551,177 @@ body {
     color: #00FFFF;
     letter-spacing: 4px;
     font-weight: 400;
+    z-index: 1000;
+}
+
+/* MEDIA QUERY  */
+
+@media (min-width: 300px) and (max-width: 750px) {
+
+    /* MAIN SECTION  */
+
+    .main {
+        height: 100vh;
+    }
+
+    .main,
+    .portfolio-section,
+    .contact-section {
+        background-image: none;
+    }
+
+    .navbar,
+    .email-info,
+    svg {
+        display: none;
+    }
+
+    .resume-button {
+        top: 48rem;
+        right: 9rem;
+        padding: 1rem;
+    }
+
+    .dev-info {
+        margin: 1rem;
+        top: 15rem;
+        max-width: 100%;
+        padding: 1rem;
+        letter-spacing: 2px;
+    }
+
+    .dev-info h1 {
+        font-size: 4rem;
+    }
+
+    .dev-info p {
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+
+    .welcome-to {
+        bottom: 15rem;
+        width: 100%;
+    }
+
+    .welcome-to p {
+        letter-spacing: 1px;
+        margin: 0 10px;
+        font-size: 1rem;
+    }
+
+    .welcome-to i {
+        font-size: 1rem;
+    }
+
+    /* ABOUT SECTION  */
+
+    .header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .sub-header {
+        font-size: 4rem;
+        letter-spacing: 2px;
+    }
+
+    .about-info {
+        position: absolute;
+        top: 0;
+        margin-top: 5rem;
+        max-width: 100%;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .about-info p {
+        text-align: center;
+        max-height: 50rem;
+        font-size: 1.2rem;
+        padding: max(3vh, 1rem);
+        overflow: none;
+    }
+
+    .myimage {
+        min-width: 400px;
+        min-height: 450px;
+        background-size: cover;
+        margin-left: 0;
+        -webkit-filter: brightness(80%);
+    }
+
+    .myimage:hover {
+        -webkit-filter: brightness(80%);
+        transform: scale(1);
+    }
+
+    /* SKIILS  */
+
+    .skills-section p {
+        font-size: 1rem;
+        margin: 3rem 1rem;
+    }
+
+    .tech-icons {
+        margin: 0;
+        min-height: 0;
+        margin-left: 0;
+        top: 2rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .icon-container {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .icon-container i {
+        display: flex;
+        justify-content: space-evenly;
+        font-size: 3rem;
+        margin-top: 1.5rem;
+        columns: 2;
+    }
+
+    .icon-container span {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1rem;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .icon-container div:hover {
+        color: #00FFFF;
+        transition: ease-in-out 0.4s;
+        transform: scale(1.1);
+    }
+
+    .skills-section svg {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* PORTFOLIO SECTION*/
+
+    .portfolio-section {
+        background-image: url(./assets/Hexagon.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
+    }
+
+    .portfolio-section .header {
+        position: absolute;
+    }
 }
