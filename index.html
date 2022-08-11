@@ -5,236 +5,216 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/fontawsome/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
-    <title>WD Frontend Developer</title>
+    <link rel="stylesheet" href="./assets/fontawsome/css/all.min.css">
+    <title>Wilfredo Diaz</title>
 </head>
 
 <body>
-    <!-- MAIN SECTION -->
+    <section class="top-nav">
+        <div class="logo-name">
+            <p>UI/UX</p>
+            <p>Design</p>
+        </div>
 
-    <div class="main" id="home">
-        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 230" version="1.1"
-            xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                    <stop stop-color="rgba(25, 28, 50, 1)" offset="0%"></stop>
-                    <stop stop-color="rgba(0, 153, 255, 1)" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-                d="M0,115L30,95.8C60,77,120,38,180,53.7C240,69,300,138,360,141.8C420,146,480,84,540,72.8C600,61,660,100,720,126.5C780,153,840,169,900,149.5C960,130,1020,77,1080,46C1140,15,1200,8,1260,23C1320,38,1380,77,1440,95.8C1500,115,1560,115,1620,107.3C1680,100,1740,84,1800,95.8C1860,107,1920,146,1980,168.7C2040,192,2100,199,2160,180.2C2220,161,2280,115,2340,107.3C2400,100,2460,130,2520,130.3C2580,130,2640,100,2700,84.3C2760,69,2820,69,2880,76.7C2940,84,3000,100,3060,107.3C3120,115,3180,115,3240,130.3C3300,146,3360,176,3420,157.2C3480,138,3540,69,3600,38.3C3660,8,3720,15,3780,38.3C3840,61,3900,100,3960,115C4020,130,4080,123,4140,103.5C4200,84,4260,54,4290,38.3L4320,23L4320,230L4290,230C4260,230,4200,230,4140,230C4080,230,4020,230,3960,230C3900,230,3840,230,3780,230C3720,230,3660,230,3600,230C3540,230,3480,230,3420,230C3360,230,3300,230,3240,230C3180,230,3120,230,3060,230C3000,230,2940,230,2880,230C2820,230,2760,230,2700,230C2640,230,2580,230,2520,230C2460,230,2400,230,2340,230C2280,230,2220,230,2160,230C2100,230,2040,230,1980,230C1920,230,1860,230,1800,230C1740,230,1680,230,1620,230C1560,230,1500,230,1440,230C1380,230,1320,230,1260,230C1200,230,1140,230,1080,230C1020,230,960,230,900,230C840,230,780,230,720,230C660,230,600,230,540,230C480,230,420,230,360,230C300,230,240,230,180,230C120,230,60,230,30,230L0,230Z">
-            </path>
-        </svg>
-        <!-- Developer info -->
+        <input id="menu-toggle" type="checkbox" />
+
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+
+        <ul class="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#my-work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+    </section>
+
+    <!-- MAIN SECTION  -->
+
+    <div class="main-section" id="home">
         <div class="dev-info">
-            <p>Hi there, I'm</p>
-            <h1>Wilfredo Diaz</h1>
+            <h3>Hi there, I'm</h3>
+            <h1>Wilfredo Diaz.</h1>
             <p>I am a Front-End Software Engineer based in Tampa Florida.</p>
             <p>I'm passionate about turning ideas into real life products.</p>
-
+            <!-- RESUME BUTTON -->
+            <button class="button"></button>
         </div>
 
-        <!-- Navbar -->
-        <nav class="navbar">
-
-            <div class="logo">
-                <h4>Wil</h4>
-                <p>UI/UX Design</p>
-            </div>
-
-            <div class="navbar-links">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about-me">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact-me">Contact Me</a></li>
-                </ul>
-                <div class="divider-left-main"></div>
-            </div>
-
-            <!-- Social media icons/main -->
-            <div class="main-social">
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
-            </div>
-
-        </nav>
-
-        <!-- Bottom right email -->
-        <div class="email-info">
-            <p>wdiazdev@gmail.com</p>
-            <div class="divider-right-main"></div>
-        </div>
-        <!-- Resume button -->
-        <button class="resume-button"><span>Resume</span></button>
+        <!-- RESUME BUTTON -->
 
         <div class="welcome-to">
             <i class="fa-solid fa-angles-down"></i>
             <p>Welcome to my little corner of the internet</p>
             <i class="fa-solid fa-angles-down"></i>
         </div>
+
     </div>
 
-    <!-- ABOUT SECTION -->
+    <!-- ABOUT SECTION  -->
 
-    <div class="about-section" id="about-me">
-        <div class="header">
-            <h2 class="sub-header">About Me</h2>
-            <div class="about-info">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Culpa provident neque harum autem eius
-                    reiciendis a consequuntur excepturi possimus ratione.
-                    Laboriosam dolorem, aspernatur odio enim magni
-                    eius quam at iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Culpa provident neque harum autem eius
-                    reiciendis a consequuntur excepturi possimus ratione.
-                    Laboriosam dolorem, aspernatur odio enim magni
-                    eius quam at iusto?Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Culpa provident neque harum autem eius
-                    reiciendis a consequuntur excepturi possimus ratione.
-                    Laboriosam dolorem, aspernatur odio enim magni
-                    eius quam at iusto?</p>
-                <div class="myimage">
-                    <div class="gradient"></div>
-                </div>
-            </div>
+    <div class="about-section" id="about">
+        <h2 class="sub-header">About Me</h2>
+        <div class="about-info">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nostrum rem aperiam rerum architecto
+                cupiditate provident impedit? Minima, suscipit odio nemo quia, dolores iure nostrum, eaque autem
+                deleniti officia corrupti.</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quis, assumenda repudiandae consectetur
+                accusamus quam voluptatibus sequi quaerat est fugiat. Culpa quia debitis tempore odio voluptatum
+                cupiditate dolor ipsum soluta.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, delectus! Fugiat consectetur minima
+                temporibus possimus ipsam atque vel corporis perferendis, iusto doloremque necessitatibus beatae ut nam
+                unde voluptatem rem eos?</p>
         </div>
-
+        <div class="dev-image">
+            <img src="./assets/myimage.jpg" alt="Developer Image">
+        </div>
     </div>
 
-    <!-- SKILLS SECTION  -->
+    <!-- SKILLS SECTION -->
 
     <div class="skills-section" id="skills">
-        <div class="header">
+        <div class="skills-info">
             <h2 class="sub-header">My Toolbox</h2>
+
             <p>The skills, tools and technologies I use to bring your products to life.</p>
-        </div>
-        <!-- TECH ICONS  -->
-        <div class="tech-icons">
-            <div class="icon-container">
-                <div>
-                    <i class="fa-brands fa-html5"></i>
-                    <span>HTML5</span>
-                </div>
-                <div>
-                    <i class="fa-brands fa-css3-alt"></i>
-                    <span>CSS3</span>
-                </div>
-                <div>
-                    <i class="fa-brands fa-js"></i>
-                    <span>JavaScript</span>
-                </div>
-                <div>
-                    <i class="fa-brands fa-python"></i>
-                    <span>Python</span>
-                </div>
-                <div>
-                    <i class="fa-brands fa-node-js"></i>
-                    <span>Node.js</span>
-                </div>
-                <div>
-                    <i class="fa-brands fa-git-alt"></i>
-                    <span>Git</span>
-                </div>
-
-                <div>
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub</span>
-                </div>
-                <div>
-                    <i class="fa-brands fa-bootstrap"></i>
-                    <span>Bootstrap</span>
-                </div>
-                <div>
-                    <i class="fa-solid fa-laptop-code"></i>
-                    <span>Responsive<br>Websites</span>
-                </div>
-                <div>
-                    <i class="fa-solid fa-terminal"></i>
-                    <span>Command-line</span>
-                </div>
-                <div>
-                    <i class="fa-brands fa-google"></i>
-                    <span>Google<br>Analytics</span>
-                </div>
-                <div>
-                    <i class="fa-brands fa-figma"></i>
-                    <span>Figma</span>
-                </div>
-            </div>
+            <!-- ICONS  -->
+            <ul class="icons">
+                <li>
+                    <div>
+                        <i class="fa-brands fa-html5"></i>
+                        <span>HTML</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-brands fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-brands fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-brands fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-brands fa-git-alt"></i>
+                        <span>Git</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-brands fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <span>Bootstrap</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <span>Responsive Design</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-solid fa-terminal"></i>
+                        <span>Command-line</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-brands fa-google"></i>
+                        <span>Analytics</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-brands fa-figma"></i>
+                        <span>Figma</span>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 
-    <!-- PORTFOLIO  -->
+    <!-- PORTFOLIO SECTION  -->
 
-    <div class="portfolio-section" id="portfolio">
-        <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 230" version="1.1"
-            xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                    <stop stop-color="rgba(25, 28, 50, 1)" offset="0%"></stop>
-                    <stop stop-color="rgba(0, 153, 255, 1)" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-                d="M0,115L30,95.8C60,77,120,38,180,53.7C240,69,300,138,360,141.8C420,146,480,84,540,72.8C600,61,660,100,720,126.5C780,153,840,169,900,149.5C960,130,1020,77,1080,46C1140,15,1200,8,1260,23C1320,38,1380,77,1440,95.8C1500,115,1560,115,1620,107.3C1680,100,1740,84,1800,95.8C1860,107,1920,146,1980,168.7C2040,192,2100,199,2160,180.2C2220,161,2280,115,2340,107.3C2400,100,2460,130,2520,130.3C2580,130,2640,100,2700,84.3C2760,69,2820,69,2880,76.7C2940,84,3000,100,3060,107.3C3120,115,3180,115,3240,130.3C3300,146,3360,176,3420,157.2C3480,138,3540,69,3600,38.3C3660,8,3720,15,3780,38.3C3840,61,3900,100,3960,115C4020,130,4080,123,4140,103.5C4200,84,4260,54,4290,38.3L4320,23L4320,230L4290,230C4260,230,4200,230,4140,230C4080,230,4020,230,3960,230C3900,230,3840,230,3780,230C3720,230,3660,230,3600,230C3540,230,3480,230,3420,230C3360,230,3300,230,3240,230C3180,230,3120,230,3060,230C3000,230,2940,230,2880,230C2820,230,2760,230,2700,230C2640,230,2580,230,2520,230C2460,230,2400,230,2340,230C2280,230,2220,230,2160,230C2100,230,2040,230,1980,230C1920,230,1860,230,1800,230C1740,230,1680,230,1620,230C1560,230,1500,230,1440,230C1380,230,1320,230,1260,230C1200,230,1140,230,1080,230C1020,230,960,230,900,230C840,230,780,230,720,230C660,230,600,230,540,230C480,230,420,230,360,230C300,230,240,230,180,230C120,230,60,230,30,230L0,230Z">
-            </path>
-        </svg>
-        <div class="header">
-            <h2 class="sub-header">Portfolio</h2>
+    <div class="work-section" id="my-work">
+        <div class="portfolio-info">
+            <h2 class="sub-header">My Work</h2>
+
         </div>
     </div>
 
-    <!-- CONTACT  -->
+    <!-- CONTACT SECTION  -->
 
-    <div class="contact-section" id="contact-me">
-        <div class="header">
-            <h2 class="sub-header">Contact Me</h2>
+    <div class="contact-section" id="contact">
+        <div class="portfolio-info">
+            <h2 class="sub-header">Get In Touch</h2>
             <p>I am available to work on your projects and bring your ideas to life.</p>
-            <div class="contact-form">
-                <div class="contact-icons">
-                    <i class="fa-solid fa-location-dot"><span>Tampa Florida</span></i>
-                    <i class="fa-solid fa-envelope"><span>wdiazdev@gmail.com</span></i>
-                    <i class="fa-solid fa-phone"><span>407-437-8084</span></i>
+        </div>
+        <div class="contact-form">
+            <ul class="contact-icons">
+                <li>
+                    <div>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Tampa, Florida</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>wdiazdev@gmail.com</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>407-437-8084</span>
+                    </div>
+                </li>
+            </ul>
+            <form class="form">
+                <input type="text" placeholder="Full Name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone Number">
+                <textarea placeholder="Enter your message!"></textarea>
+                <button class="button"></button>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+                <h5>Designed & Built by Wilfredo Diaz</h5>
+                <div class="footer-social">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-github"></i>
                 </div>
-                <form class="form">
-                    <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Phone Number">
-                    <textarea placeholder="Enter your message"></textarea>
-                    <button class="contact-button"><span>Submit</span></button>
-                </form>
             </div>
-
-
         </div>
-    </div>
-
-    <!-- FOOTER  -->
-
-    <div class="footer">
-        <div class="footer-content">
-            <h5>Designed & Built by Wilfredo Diaz</h5>
-        </div>
-        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 230" version="1.1"
-            xmlns="http://www.w3.org/2000/svg">
-            <defs>
-                <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
-                    <stop stop-color="rgba(25, 28, 50, 1)" offset="0%"></stop>
-                    <stop stop-color="rgba(0, 153, 255, 1)" offset="100%"></stop>
-                </linearGradient>
-            </defs>
-            <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)"
-                d="M0,115L30,95.8C60,77,120,38,180,53.7C240,69,300,138,360,141.8C420,146,480,84,540,72.8C600,61,660,100,720,126.5C780,153,840,169,900,149.5C960,130,1020,77,1080,46C1140,15,1200,8,1260,23C1320,38,1380,77,1440,95.8C1500,115,1560,115,1620,107.3C1680,100,1740,84,1800,95.8C1860,107,1920,146,1980,168.7C2040,192,2100,199,2160,180.2C2220,161,2280,115,2340,107.3C2400,100,2460,130,2520,130.3C2580,130,2640,100,2700,84.3C2760,69,2820,69,2880,76.7C2940,84,3000,100,3060,107.3C3120,115,3180,115,3240,130.3C3300,146,3360,176,3420,157.2C3480,138,3540,69,3600,38.3C3660,8,3720,15,3780,38.3C3840,61,3900,100,3960,115C4020,130,4080,123,4140,103.5C4200,84,4260,54,4290,38.3L4320,23L4320,230L4290,230C4260,230,4200,230,4140,230C4080,230,4020,230,3960,230C3900,230,3840,230,3780,230C3720,230,3660,230,3600,230C3540,230,3480,230,3420,230C3360,230,3300,230,3240,230C3180,230,3120,230,3060,230C3000,230,2940,230,2880,230C2820,230,2760,230,2700,230C2640,230,2580,230,2520,230C2460,230,2400,230,2340,230C2280,230,2220,230,2160,230C2100,230,2040,230,1980,230C1920,230,1860,230,1800,230C1740,230,1680,230,1620,230C1560,230,1500,230,1440,230C1380,230,1320,230,1260,230C1200,230,1140,230,1080,230C1020,230,960,230,900,230C840,230,780,230,720,230C660,230,600,230,540,230C480,230,420,230,360,230C300,230,240,230,180,230C120,230,60,230,30,230L0,230Z">
-            </path>
-        </svg>
-    </div>
-    <a href="#" id="to-top" class="to-top"><i class="fa-solid fa-angles-up"></i></a>
-
-
 </body>
 
 </html>
