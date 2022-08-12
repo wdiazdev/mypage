@@ -145,12 +145,16 @@ body {
 
 .welcome-to {
     position: absolute;
-    bottom: 2rem;
+    bottom: 4rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #00FFFF;
+}
+
+.welcome-to-hidden {
+    display: none;
 }
 
 .welcome-to h5 {
@@ -426,14 +430,15 @@ body {
 
 .icon-live i {
     color: #00FFFF;
-    font-size: 2rem;
-    margin: 0 1rem;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
 }
 
 .icon-live a {
     color: #ff0000;
-    font-size: 2rem;
-    margin: 0 1rem;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    text-transform: uppercase;
 }
 
 
