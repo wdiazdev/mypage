@@ -42,13 +42,19 @@ body {
 .menu {
     display: flex;
     flex-direction: row;
-    margin: 0;
+    margin: 1rem 0;
     padding: 0;
 }
 
 .menu a {
-    margin: 0 1rem;
+    margin: 0 3rem;
     overflow: hidden;
+    color: #00FFFF;
+}
+
+.menu a:hover {
+    color: #FFFFFF;
+    transition: ease-in 0.3s;
 }
 
 .menu-button-container {
@@ -113,19 +119,23 @@ body {
 
 .dev-info {
     margin-bottom: 15rem;
+}
+
+.dev-info h3 {
+    font-size: 1.5rem;
     background: #FFFFFF;
     background: linear-gradient(to right, #FFFFFF 0%, #00FFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.dev-info h3 {
-    font-size: 1.5rem;
-}
-
 .dev-info h1 {
     font-size: 3rem;
     margin: 1rem 0;
+    background: #FFFFFF;
+    background: linear-gradient(to right, #FFFFFF 0%, #00FFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .dev-info p {
@@ -133,10 +143,9 @@ body {
     margin: 1rem 0;
 }
 
-
 .welcome-to {
     position: absolute;
-    bottom: 4rem;
+    bottom: 2rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -144,14 +153,123 @@ body {
     color: #00FFFF;
 }
 
-.welcome-to p {
-    text-align: center;
+.welcome-to h5 {
     font-weight: 400;
+    text-align: center;
+    color: #00FFFF;
+    font-size: 0.8rem;
 }
 
 .welcome-to i {
     font-size: 1rem;
     margin: 0 1rem;
+}
+
+.bounce {
+    display: inline-block;
+    position: relative;
+    -moz-animation: bounce 0.5s infinite linear;
+    -o-animation: bounce 0.5s infinite linear;
+    -webkit-animation: bounce 0.5s infinite linear;
+    animation: bounce 0.5s infinite linear;
+}
+
+.fa-angles-down {
+    color: #00FFFF;
+    font-size: 3em;
+    margin: 20px;
+}
+
+/* FOR ICONS TO BOUNCE  */
+
+@-webkit-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-moz-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-o-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@-ms-keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+@keyframes bounce {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -0.2em;
+    }
+
+    70% {
+        top: -0.3em;
+    }
+
+    100% {
+        top: 0;
+    }
 }
 
 /* ABOUT SECTION  */
@@ -201,7 +319,7 @@ body {
 /* SKILLS SECTION  */
 
 .skills-section {
-    /* height: 100vh; */
+    min-height: 100vh;
     padding: 1rem;
     background-image: url(./assets/Hexagon.svg);
     background-repeat: no-repeat;
@@ -219,11 +337,13 @@ body {
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
+    column-span: all;
     margin-top: 6rem;
 }
 
 .icons i {
     font-size: 3.5rem;
+    margin-bottom: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -251,6 +371,71 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.work-section p {
+    font-size: 1rem;
+    margin: 2rem 0;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #00FFFF;
+    background: rgba(0, 0, 0, 0.6);
+    transition: ease-in-out 0.5s;
+}
+
+.cards:hover {
+    background-color: #3b3838;
+    transform: translateY(-30px);
+}
+
+.project-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.cardcontent h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 1rem 0;
+}
+
+.cardcontent p {
+    text-align: center;
+    margin: 1rem 0.5rem;
+}
+
+.icon-live {
+    margin: 1rem 0;
+}
+
+.icon-live i {
+    color: #00FFFF;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+.icon-live a {
+    color: #ff0000;
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
 
 /* CONTACT SECTION  */
 
@@ -307,6 +492,25 @@ body {
     padding: 1rem;
 }
 
+.button {
+    width: 8rem;
+    height: 3rem;
+    color: #00FFFF;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid #00FFFF;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #308d8d;
+}
+
+
+/* FOOTER  */
+
 .footer-content {
     width: 100%;
     text-align: center;
@@ -324,6 +528,11 @@ body {
     color: #00FFFF;
     font-size: 1.5rem;
 }
+
+
+
+
+
 
 
 
@@ -414,7 +623,6 @@ body {
     .menu li:hover {
         background-color: #3b3a3a;
         transition: ease-in 0.4s;
-
     }
 
     .menu a {
@@ -424,5 +632,9 @@ body {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .menu a:hover {
+        color: #00FFFF;
     }
 }
