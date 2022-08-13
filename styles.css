@@ -139,7 +139,7 @@ body {
 }
 
 .dev-info p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 1rem 0;
 }
 
@@ -358,6 +358,7 @@ body {
 }
 
 .dev-image {
+    margin-top: 5rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -375,30 +376,36 @@ body {
 /* SKILLS SECTION  */
 
 .skills-section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 1rem;
     background-image: url(./assets/Hexagon.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.para-info {
+.skills-section p {
     font-size: 1rem;
     margin: 2rem 0;
 }
 
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: 6rem;
+}
+
 .icons {
-    text-align: center;
-    width: 100%;
+    margin-top: 1rem;
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
     column-span: all;
-    margin-top: 6rem;
 }
 
 .icons i {
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
@@ -422,7 +429,6 @@ body {
 
 .work-section {
     min-height: 100vh;
-    width: 100%;
     padding: 1rem;
     background-image: url(./assets/Hexagon.svg);
     background-repeat: no-repeat;
@@ -431,7 +437,7 @@ body {
 
 .work-section p {
     font-size: 1rem;
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 .container {
@@ -440,12 +446,13 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    /* max-width: 90%; */
     border: 1px solid red;
 }
 
 .cards {
     max-width: 400px;
-    max-height: 800px;
+    max-height: 900px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -501,7 +508,6 @@ body {
 /* CONTACT SECTION  */
 
 .contact-section {
-    position: relative;
     min-height: 100vh;
     padding: 1rem;
     background-image: url(./assets/Hexagon.svg);
@@ -516,6 +522,7 @@ body {
 
 .contact-form {
     margin: 4rem 0;
+    border: 1px solid red;
 }
 
 .contact-icons {
@@ -533,6 +540,7 @@ body {
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
+    border: 1px solid red;
 }
 
 .form input {
@@ -593,19 +601,39 @@ body {
     font-size: 1.5rem;
 }
 
+.to-top {
+    background-color: #00FFFF;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 2.5rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s;
+}
+
+.to-top i {
+    color: #191c32;
+    font-size: 2rem;
+}
+
+.to-top.active {
+    bottom: 20px;
+    opacity: 1;
+    pointer-events: auto;
+}
 
 /* MEDIA QUERY BREAKPOINTS  **********************************/
 
-/* MAX-WIDTH 525PX  ******************************************/
-
-@media (min-width: 525px) {
-
-    /* ABOUT SECTION  */
-
-    .about-info p {
-        font-size: 1.5rem;
-    }
-}
 
 /* MAX-WIDTH 700PX  ******************************************/
 
@@ -667,15 +695,7 @@ body {
         color: #00FFFF;
     }
 
-    .email-right {
-        display: none;
-    }
-
-    .divider-right-main {
-        display: none;
-    }
-
-    .divider-left-main {
+    .email-social-main {
         display: none;
     }
 }
@@ -706,6 +726,11 @@ body {
 
     /* ABOUT SECTION  */
 
+    .about-section {
+        padding: 0;
+        margin: 0 8rem;
+    }
+
     .sub-header {
         font-size: 5rem;
     }
@@ -714,12 +739,6 @@ body {
         font-size: 1.5rem;
     }
 
-    /* .about-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
-
     .about-section img {
         max-width: 30rem;
         max-height: 30rem;
@@ -727,24 +746,71 @@ body {
 
     /* SKILLS SECTION  */
 
+    .skills-section {
+        padding: 0;
+        margin: 0 8rem;
+    }
+
     .skills-section p {
         font-size: 1.5rem;
     }
 
+    .cardcontent p {
+        font-size: 2rem;
+    }
+
+    .icons i {
+        font-size: 4rem;
+    }
+
+    .icons span {
+        font-size: 1rem;
+    }
+
+    /* WORK SECTION  */
+
+    .work-section {
+        padding: 0;
+        margin: 0 8rem;
+    }
+
     .work-section p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* CONTACT SECTION  */
+
+    .contact-section {
+        padding: 0;
+        margin: 0 8rem;
     }
 
     .contact-section p {
         font-size: 1.5rem;
     }
+
+    .contact-form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-container {
+        width: 38rem;
+    }
+
 }
 
-/* MAX-WIDTH 1200PX  ******************************************/
+/* MAX-WIDTH 1000PX  ******************************************/
 
 @media (max-width: 1000px) {
+
+    /* WORK SECTION  */
+
     .container {
         display: flex;
         flex-direction: column;
     }
+
 }

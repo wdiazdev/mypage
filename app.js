@@ -1,3 +1,4 @@
+const top20 = document.getElementById("top20");
 const welcomeTo = document.querySelector("#welcome-to");
 let lastScrollY = window.scrollY;
 
@@ -11,3 +12,15 @@ window.addEventListener("scroll", () => {
     }
     lastScrollY = window.scrollY;
 });
+
+// To top button
+
+const toTop = document.getElementById("to-top");
+
+window.onscroll = function () {
+    if (window.scrollY >= 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
+    }
+}
