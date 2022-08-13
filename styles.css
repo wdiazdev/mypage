@@ -47,7 +47,7 @@ body {
 }
 
 .menu a {
-    margin: 0 3rem;
+    margin: 0 1rem;
     overflow: hidden;
     color: #00FFFF;
 }
@@ -118,7 +118,7 @@ body {
 }
 
 .dev-info {
-    margin-bottom: 15rem;
+    margin-bottom: 10rem;
 }
 
 .dev-info h3 {
@@ -145,7 +145,7 @@ body {
 
 .welcome-to {
     position: absolute;
-    bottom: 4rem;
+    bottom: 3rem;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -182,6 +182,55 @@ body {
     color: #00FFFF;
     font-size: 3em;
     margin: 20px;
+}
+
+.email-right {
+    position: fixed;
+    bottom: 0;
+    right: 1.4rem;
+    min-height: 26rem;
+    color: #00FFFF;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    z-index: 1000;
+}
+
+.divider-right-main {
+    position: fixed;
+    bottom: 0;
+    right: 1.8rem;
+    min-width: 2px;
+    min-height: 10rem;
+    background-color: #00FFFF;
+    z-index: 1000;
+}
+
+.divider-left-main {
+    position: fixed;
+    bottom: 0;
+    left: 1.8rem;
+    min-width: 2px;
+    min-height: 10rem;
+    background-color: #00FFFF;
+    z-index: 1000;
+}
+
+.main-social {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 1.2rem;
+    min-height: 26rem;
+    z-index: 1000;
+}
+
+.main-social i {
+    color: #00FFFF;
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
 }
 
 /* FOR ICONS TO BOUNCE  */
@@ -281,6 +330,9 @@ body {
 .about-section {
     min-height: 100vh;
     padding: 1rem;
+    background-image: url(./assets/Hexagon.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .sub-header {
@@ -330,7 +382,7 @@ body {
     background-size: cover;
 }
 
-.skills-section p {
+.para-info {
     font-size: 1rem;
     margin: 2rem 0;
 }
@@ -370,6 +422,7 @@ body {
 
 .work-section {
     min-height: 100vh;
+    width: 100%;
     padding: 1rem;
     background-image: url(./assets/Hexagon.svg);
     background-repeat: no-repeat;
@@ -382,19 +435,22 @@ body {
 }
 
 .container {
-    width: 100%;
-    height: 100%;
     margin-top: 5rem;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    border: 1px solid red;
 }
 
 .cards {
+    max-width: 400px;
+    max-height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1rem 1rem;
     border-radius: 10px;
     border: 2px solid #00FFFF;
     background: rgba(0, 0, 0, 0.6);
@@ -499,6 +555,8 @@ body {
 
 .button {
     width: 8rem;
+    margin-top: 1rem;
+    border-radius: 10px;
     height: 3rem;
     color: #00FFFF;
     font-size: 1rem;
@@ -507,6 +565,7 @@ body {
     background-color: transparent;
     border: 2px solid #00FFFF;
     cursor: pointer;
+    transition: ease-in 0.4s;
 }
 
 .button:hover {
@@ -535,55 +594,20 @@ body {
 }
 
 
+/* MEDIA QUERY BREAKPOINTS  **********************************/
 
+/* MAX-WIDTH 525PX  ******************************************/
 
+@media (min-width: 525px) {
 
+    /* ABOUT SECTION  */
 
+    .about-info p {
+        font-size: 1.5rem;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* MAX-WIDTH 700PX  ******************************************/
 
 @media (max-width: 700px) {
     .menu-button-container {
@@ -641,5 +665,86 @@ body {
 
     .menu a:hover {
         color: #00FFFF;
+    }
+
+    .email-right {
+        display: none;
+    }
+
+    .divider-right-main {
+        display: none;
+    }
+
+    .divider-left-main {
+        display: none;
+    }
+}
+
+/* MAX-WIDTH 701PX  ******************************************/
+
+@media (min-width: 701px) {
+
+    /* MAIN SECTION  */
+
+    .main-section {
+        background: url(./assets/Animated\ Shape.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .dev-info h3 {
+        font-size: 2.5rem;
+    }
+
+    .dev-info h1 {
+        font-size: 5rem;
+    }
+
+    .dev-info p {
+        font-size: 1.5rem;
+    }
+
+    /* ABOUT SECTION  */
+
+    .sub-header {
+        font-size: 5rem;
+    }
+
+    .about-info p {
+        font-size: 1.5rem;
+    }
+
+    /* .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
+
+    .about-section img {
+        max-width: 30rem;
+        max-height: 30rem;
+    }
+
+    /* SKILLS SECTION  */
+
+    .skills-section p {
+        font-size: 1.5rem;
+    }
+
+    .work-section p {
+        font-size: 1.5rem;
+    }
+
+    .contact-section p {
+        font-size: 1.5rem;
+    }
+}
+
+/* MAX-WIDTH 1200PX  ******************************************/
+
+@media (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
     }
 }
