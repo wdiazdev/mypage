@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="styles.css">
     <script src="app.js" defer></script>
     <link rel="stylesheet" href="./assets/fontawsome/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Wilfredo Diaz</title>
 </head>
 
 <body>
-    <section class="top-nav">
+    <section class="top-nav" data-aos="slide-down">
         <div class="logo-name">
             <p>UI/UX</p>
             <p>Design</p>
@@ -31,13 +32,12 @@
             <li><a href="#my-work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-
     </section>
 
     <!-- MAIN SECTION  -->
 
     <div class="main-section" id="home">
-        <div class="dev-info">
+        <div class="dev-info" data-aos="fade-right">
             <h3>Hi there, I'm</h3>
             <h1>Wilfredo Diaz.</h1>
             <p>I am a Front-End Software Engineer based in Tampa Florida.</p>
@@ -66,9 +66,9 @@
     <!-- ABOUT SECTION  -->
 
     <div class="about-section" id="about">
-        <h2 class="sub-header">About Me</h2>
+        <h2 class="sub-header" data-aos="fade-right">About Me</h2>
         <div class="about-content">
-            <div class="about-info">
+            <div class="about-info" data-aos="slide-up">
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum nostrum rem aperiam rerum architecto
                     cupiditate provident impedit? Minima, suscipit odio nemo quia, dolores iure nostrum, eaque autem
                     deleniti officia corrupti.</p>
@@ -82,7 +82,7 @@
                     nam
                     unde voluptatem rem eos?</p>
             </div>
-            <div class="dev-image">
+            <div class="dev-image" data-aos="zoom-in">
                 <img src="./assets/myimage.jpg" alt="Developer Image">
             </div>
         </div>
@@ -91,13 +91,13 @@
     <!-- SKILLS SECTION -->
 
     <div class="skills-section" id="skills">
-        <div class="skills-info">
+        <div class="skills-info" data-aos="fade-right">
             <h2 class="sub-header">My Toolbox</h2>
             <p>Tools and technologies I use to bring your products to life.</p>
 
             <!-- ICONS  -->
 
-            <div class="icon-container">
+            <div class="icon-container" data-aos="fade-left">
                 <ul class="icons">
                     <li>
                         <div>
@@ -179,10 +179,10 @@
     <!-- WORK SECTION  -->
 
     <div class="work-section" id="my-work">
-        <h2 class="sub-header">My Work</h2>
-        <p class="para-info">Some Things I’ve Built</p>
+        <h2 class="sub-header" data-aos="fade-right">My Work</h2>
+        <p class="para-info" data-aos="fade-right">Some Things I’ve Built</p>
 
-        <div class="container">
+        <div class="container" data-aos="zoom-out-up">
 
             <!-- CARD 1 -->
 
@@ -255,11 +255,11 @@
     <!-- CONTACT SECTION  -->
 
     <div class="contact-section" id="contact">
-        <div class="portfolio-info">
+        <div class="portfolio-info" data-aos="fade-right">
             <h2 class="sub-header">Get In Touch</h2>
             <p>I am available to work on your projects and bring your ideas to life.</p>
         </div>
-        <div class="contact-form">
+        <div class="contact-form" data-aos="zoom-out-up">
             <div class="contact-container">
                 <ul class="contact-icons">
                     <li>
@@ -303,6 +303,14 @@
             </div>
         </div>
         <a href="#" id="to-top" class="to-top"><i class="fa-solid fa-angles-up"></i></a>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                offset: 400,
+                duration: 800
+            });
+        </script>
 </body>
 
 </html>
