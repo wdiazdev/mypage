@@ -549,6 +549,10 @@ body {
     border: none;
 }
 
+.form input::placeholder {
+    font-size: 1rem;
+}
+
 .form textarea {
     height: 10rem;
     margin: 1rem 0;
@@ -558,6 +562,7 @@ body {
 
 .form textarea::placeholder {
     padding: 1rem;
+    font-size: 1rem;
 }
 
 .button {
@@ -579,7 +584,6 @@ body {
     background-color: #308d8d;
 }
 
-
 /* FOOTER  */
 
 .footer-content {
@@ -598,6 +602,12 @@ body {
 .footer-content i {
     color: #00FFFF;
     font-size: 1.5rem;
+}
+
+/* TO TOP BUTTON  */
+
+.to-top {
+    display: none;
 }
 
 /* MEDIA QUERY BREAKPOINTS  **********************************/
