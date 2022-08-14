@@ -25,7 +25,6 @@ body {
     align-items: center;
     justify-content: space-between;
     color: #FFF;
-    height: 4rem;
     padding: 1em;
 }
 
@@ -42,12 +41,12 @@ body {
 .menu {
     display: flex;
     flex-direction: row;
-    margin: 1rem 0;
+    margin: 2rem 0;
     padding: 0;
 }
 
 .menu a {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
     overflow: hidden;
     color: #00FFFF;
 }
@@ -442,17 +441,14 @@ body {
 
 .container {
     margin-top: 5rem;
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
     justify-content: center;
     align-items: center;
-    /* max-width: 90%; */
-    border: 1px solid red;
 }
 
 .cards {
     max-width: 400px;
-    max-height: 900px;
+    max-height: 620px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -475,6 +471,7 @@ body {
 }
 
 .cardcontent h2 {
+    font-size: 1rem;
     color: white;
     text-align: center;
     text-transform: uppercase;
@@ -483,11 +480,13 @@ body {
 }
 
 .cardcontent p {
+    font-size: 0.8rem;
     text-align: center;
     margin: 1rem 0.5rem;
 }
 
 .icon-live {
+    text-align: center;
     margin: 1rem 0;
 }
 
@@ -522,7 +521,6 @@ body {
 
 .contact-form {
     margin: 4rem 0;
-    border: 1px solid red;
 }
 
 .contact-icons {
@@ -540,7 +538,6 @@ body {
     display: flex;
     flex-direction: column;
     margin: 2rem 0;
-    border: 1px solid red;
 }
 
 .form input {
@@ -633,7 +630,6 @@ body {
 }
 
 /* MEDIA QUERY BREAKPOINTS  **********************************/
-
 
 /* MAX-WIDTH 700PX  ******************************************/
 
@@ -769,6 +765,11 @@ body {
 
     /* WORK SECTION  */
 
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
     .work-section {
         padding: 0;
         margin: 0 8rem;
@@ -776,6 +777,14 @@ body {
 
     .work-section p {
         font-size: 1.2rem;
+    }
+
+    .cards {
+        max-height: 680px;
+    }
+
+    .cards h2 {
+        font-size: 1.5rem;
     }
 
     /* CONTACT SECTION  */
@@ -804,13 +813,26 @@ body {
 
 /* MAX-WIDTH 1000PX  ******************************************/
 
-@media (max-width: 1000px) {
+@media (min-width: 1000px) {
 
-    /* WORK SECTION  */
+    /* MAIN SECTION  */
+
+    .dev-info h3 {
+        font-size: 3rem;
+    }
+
+    .dev-info h1 {
+        font-size: 7rem;
+    }
+
+    .dev-info p {
+        font-size: 2rem;
+    }
 
     .container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
 }
