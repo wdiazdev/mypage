@@ -327,7 +327,7 @@ body {
 /* ABOUT SECTION  */
 
 .about-section {
-    min-height: 80vh;
+    min-height: 60vh;
     padding: 1rem;
     background-image: url(./assets/Hexagon.svg);
     background-repeat: no-repeat;
@@ -377,7 +377,7 @@ body {
 /* SKILLS SECTION  */
 
 .skills-section {
-    min-height: 100vh;
+    min-height: 80vh;
     padding: 1rem;
     background-image: url(./assets/Hexagon.svg);
     background-repeat: no-repeat;
@@ -469,6 +469,7 @@ body {
 
 .project-img img {
     width: 100%;
+    max-height: 320px;
     border-radius: 10px;
 }
 
@@ -551,6 +552,11 @@ body {
 
 .form input::placeholder {
     font-size: 1rem;
+}
+
+textarea:focus,
+input:focus {
+    outline-color: #00FFFF;
 }
 
 .form textarea {
