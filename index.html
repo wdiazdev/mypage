@@ -283,12 +283,13 @@
                         </div>
                     </li>
                 </ul>
-                <form class="form">
-                    <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Phone Number">
-                    <textarea placeholder="Enter your message!"></textarea>
-                    <button class="button">Submit</button>
+                <form class="form" action="https://formsubmit.co/wdiazdev@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="text" placeholder="Phone Number | Optional">
+                    <textarea placeholder="Enter your message!" required></textarea>
+                    <input type="hidden" name="_subject" value="New message from www.wdiazdev.com">
+                    <button type="submit" class="button">Submit</button>
                 </form>
             </div>
         </div>

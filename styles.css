@@ -552,6 +552,7 @@ body {
 
 .form input::placeholder {
     font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 textarea:focus,
@@ -568,7 +569,8 @@ input:focus {
 
 .form textarea::placeholder {
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .button {
