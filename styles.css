@@ -327,7 +327,7 @@ body {
 /* ABOUT SECTION  */
 
 .about-section {
-    min-height: 60vh;
+    min-height: 70vh;
     padding: 1rem;
     background-image: url(./assets/Hexagon.svg);
     background-repeat: no-repeat;
@@ -366,12 +366,10 @@ body {
     align-items: center;
 }
 
-.about-section img {
-    max-width: 18rem;
-    max-height: 18rem;
+.about-content img {
+    height: 500px;
     border-radius: 50%;
     border: 5px solid #00FFFF;
-    margin: 0 1rem;
 }
 
 /* SKILLS SECTION  */
@@ -457,7 +455,7 @@ body {
     align-items: center;
     margin: 1rem 1rem;
     border-radius: 10px;
-    border: 2px solid #00FFFF;
+    border: 3px solid #00FFFF;
     background: rgba(0, 0, 0, 0.6);
     transition: ease-in-out 0.5s;
 }
@@ -468,7 +466,7 @@ body {
 }
 
 .project-img img {
-    width: 100%;
+    width: 395px;
     max-height: 320px;
     border-radius: 10px;
 }
@@ -483,6 +481,7 @@ body {
 }
 
 .cardcontent p {
+    max-width: 390px;
     font-size: 0.8rem;
     text-align: center;
     margin: 1rem 0.5rem;
@@ -715,11 +714,6 @@ input:focus {
 
     .about-info p {
         font-size: 1.3rem;
-    }
-
-    .about-section img {
-        max-width: 25rem;
-        max-height: 25rem;
     }
 
     /* SKILLS SECTION  */
