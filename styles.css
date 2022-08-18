@@ -329,7 +329,6 @@ body {
 .about-section {
     min-height: 70vh;
     padding: 1rem;
-    background-image: url(./assets/Hexagon.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -588,15 +587,15 @@ input:focus {
 
 .footer-content {
     width: 100%;
+    height: 6vh;
     text-align: center;
-    margin-top: 12rem;
 }
 
 .footer-content h5 {
     font-weight: 400;
     margin: 1rem 0;
     color: #00FFFF;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .footer-content i {
