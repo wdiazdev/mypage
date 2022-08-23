@@ -439,13 +439,14 @@ body {
 .container {
     width: 100%;
     margin-top: 5rem;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .cards {
-    max-width: 460px;
+    max-width: 400px;
     max-height: 620px;
     display: flex;
     flex-direction: column;
@@ -460,7 +461,7 @@ body {
 
 .cards:hover {
     background-color: #3b3838;
-    transform: translateY(-30px);
+    transform: translateY(-5px);
 }
 
 .project-img img {
