@@ -24,3 +24,17 @@ window.onscroll = function () {
         toTop.classList.remove("active");
     }
 }
+
+// Loader
+
+window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+    setTimeout(function () {
+        loader.classList.add("loader--hidden");
+    }, 1000)
+
+
+    // loader.addEventListener("transitionend", () => {
+    //     document.body.removeChild(loader);
+    // });
+});
