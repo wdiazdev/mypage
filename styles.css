@@ -280,6 +280,10 @@ body {
     margin: 2rem 0;
 }
 
+.about-info span {
+    color: #00FFFF;
+}
+
 .about-content {
     margin-top: 3rem;
 }
@@ -788,6 +792,7 @@ input:focus {
     }
 
     .about-content img {
+        margin-left: 20px;
         height: 450px;
     }
 }
