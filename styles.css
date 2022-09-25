@@ -345,6 +345,11 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 2rem;
+    font-weight: 500;
+    background: #00FFFF;
+    background: linear-gradient(to right, #00FFFF 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .icons div:hover {
@@ -362,9 +367,9 @@ body {
     background-size: cover;
 }
 
-.work-section p {
-    font-size: 1rem;
-    margin: 3rem 0;
+#work-section-p {
+    font-size: 24px;
+    margin: 2rem 0;
 }
 
 .container {
@@ -491,9 +496,7 @@ body {
 
 textarea:focus,
 input:focus {
-    outline-color: #00FFFF;
-    outline-style: solid;
-    outline-width: 3px;
+    outline: none;
 }
 
 .message-box {
@@ -523,8 +526,8 @@ input:focus {
 
 .footer-content {
     width: 100%;
-    margin-top: 14rem;
     text-align: center;
+    margin-top: 10rem;
 }
 
 .footer-content h5 {
