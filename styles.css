@@ -367,8 +367,8 @@ body {
     background-size: cover;
 }
 
-#work-section-p {
-    font-size: 24px;
+.work-section-subheader {
+    font-size: 1rem;
     margin: 2rem 0;
 }
 
@@ -393,17 +393,17 @@ body {
     border: 3px solid #00FFFF;
     background: rgba(0, 0, 0, 0.6);
     transition: ease-in-out 0.5s;
+    overflow: hidden;
 }
 
 .cards:hover {
-    background-color: #3b3838;
+    background-color: #2b2929;
     transform: translateY(-5px);
 }
 
 .project-img img {
     width: 100%;
     max-height: 320px;
-    border-radius: 10px;
 }
 
 .cardcontent h2 {
@@ -687,6 +687,10 @@ input:focus {
     .work-section {
         padding: 0;
         margin: 0 8rem;
+    }
+
+    .work-section .work-section-subheader {
+        font-size: 1.5rem;
     }
 
     .work-section p {
