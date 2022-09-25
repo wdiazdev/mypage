@@ -367,7 +367,7 @@ body {
     background-size: cover;
 }
 
-.work-section-subheader {
+#work-section-subheader {
     font-size: 1rem;
     margin: 2rem 0;
 }
@@ -689,7 +689,7 @@ input:focus {
         margin: 0 8rem;
     }
 
-    .work-section .work-section-subheader {
+    #work-section-subheader {
         font-size: 1.5rem;
     }
 
